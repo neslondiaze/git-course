@@ -1,7 +1,8 @@
-from src.app import suma
+from src.app import app
 
-def main() -> None:
-    suma(5, 10)
+HOST="localhost"
+PORT=4000
+DEBUG=true
 
 if __name__ == '__main__':
-    main()
+    app.run(HOST, PORT, DEBUG)
